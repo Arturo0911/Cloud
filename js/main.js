@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+
     var cedula = sessionStorage.getItem('cedula');
     const CacheLogin = {
         'cedula': cedula
@@ -17,10 +19,15 @@ $(document).ready(function() {
         });
 
         $('#container').html(template);
-        alert('Bienvenido Sr/Sra: ' +
-            Credenciales_User[0].nombres + ' ' +
-            Credenciales_User[0].apellidos);
+
+        function Saludo() {
+            alert('Bienvenido Sr/Sra: ' +
+                Credenciales_User[0].nombres + ' ' +
+                Credenciales_User[0].apellidos);
+        }
+
     });
+    Saludo();
 
 
 
