@@ -1,0 +1,361 @@
+/*@import url('https://fonts.googleapis.com/css?family=Montserrat:500');*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*background: #24252A*/
+}
+
+.imgRedonda {
+    border-radius: 160px;
+}
+
+li,
+a,
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
+}
+
+.Header_class {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 10%;
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
+}
+
+.Header_class.visible {
+    visibility: visible;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: left;
+}
+
+.nav__session {
+    list-style: none;
+    margin-right: auto;
+    padding-left: 30px;
+}
+
+.nav__session li {
+    text-align: left;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #008a90;
+}
+
+button {
+    color: black;
+    font-size: 15px;
+    margin-left: 5px;
+    padding: 9px 25px;
+    background: #FFE000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #799F0C, #FFE000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #799F0C, #FFE000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+.titulo_informe {
+    margin: auto;
+}
+
+.table_week {
+    width: 82%;
+    position: relative;
+    padding: 10px;
+    margin: auto;
+    background: #FFEFBA;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+}
+
+table {
+    width: 75%;
+    position: relative;
+    padding: 10px;
+    margin: auto;
+    background: #FFEFBA;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+}
+
+table,
+th,
+td {
+    margin-right: 5px;
+    border: 3px solid black;
+}
+
+th,
+td {
+    padding: 18px;
+    text-align: center;
+}
+
+th {
+    font-family: "Montserrat", sans-serif;
+    align-items: left;
+    height: 50px;
+}
+
+td {
+    text-align: center;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-style: bold;
+}
+
+.container {
+    width: 100%;
+    padding: 50px;
+    float: center;
+    align-items: center;
+}
+
+.button-danger {
+    position: relative;
+    color: black;
+    background: #FFEFBA;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+    margin-top: auto;
+}
+
+.button-view {
+    color: black;
+    background: #348F50;
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50);
+    background: linear-gradient(to right, #56B4D3, #348F50);
+    margin-right: auto;
+}
+
+.button-view:hover {
+    color: rgba(1, 27, 34, 0.8);
+}
+
+.button-danger:hover {
+    color: rgba(1, 27, 34, 0.8);
+}
+
+.img_button {
+    padding-right: 7px;
+}
+
+.col {
+    width: 100%;
+    padding: 50px;
+    align-items: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input {
+    width: 200px;
+    margin-left: auto;
+}
+
+.form-control {
+    width: 92%;
+    background: #FFEFBA;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+    margin: auto;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    font-style: unset;
+    color: white;
+}
+
+article {
+    padding: 30px;
+    margin-top: auto;
+}
+
+.container-busqueda {
+    padding: 15px;
+}
+
+.container-form-control {
+    border: 1px solid black;
+    margin-top: auto;
+    background: #FFEFBA;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+}
+
+.container-include {
+    padding: 30px;
+}
+
+.containter-division-zero {
+    padding: 50px;
+    margin: auto;
+}
+
+.titulo_informe {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 15px;
+}
+
+.Buttons_tables {
+    padding: 15px;
+    position: relative;
+}
+
+.Hide_form {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.Hide_form.visible {
+    visibility: visible;
+    transition: 3s ease all;
+}
+
+.popup_form {
+    background: #f8f8f8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .3);
+    border-radius: 3px;
+    font-family: "Montserrat", sans-serif;
+    padding: 15px;
+    text-align: center;
+    width: 600px;
+    opacity: 0;
+    border: 3px solid black;
+}
+
+.popup_form.visible {
+    opacity: 1;
+}
+
+.popup_form form .contenedor_inputs_weeks {
+    width: 85%;
+    align-items: center;
+    height: 60%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.popup_form form .contenedor_inputs_weeks input {
+    width: 65%;
+    margin-bottom: 5px;
+    height: 25px;
+    line-height: 8px;
+    font-size: 12px;
+    border: 1px solid;
+    text-align: center;
+}
+
+h3 {
+    width: 82%;
+    color: rgba(0, 136, 169, 0.8);
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-style: unset;
+    padding-top: 15px;
+    border: 1px solid black;
+    background: #FFEFBA;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.popup_form form .contenedor_inputs_weeks h3 {
+    padding-bottom: 15px;
+}
+
+.popup_form form .contenedor_inputs_weeks input[type=date] {
+    height: 10%;
+    padding-top: 15px;
+    line-height: 10px;
+    margin: auto;
+}
+
+.Btn_close_week {
+    width: 25%;
+    padding: 0px 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: white;
+    background: #a73737;
+    background: -webkit-linear-gradient(to right, #7a2828, #a73737);
+    background: linear-gradient(to right, #7a2828, #a73737);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.Btn_close_week:hover {
+    color: rgba(0, 136, 169, 0.8);
+}
+
+.Btn_sumbit_week {
+    padding-top: 15px;
+    margin: auto;
+    border-radius: 50px;
+    text-align: center;
+}

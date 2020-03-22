@@ -1,0 +1,169 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../statics/css/style.css" rel="stylesheet">
+    <link href="../statics/css/new_inserts.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../statics/images/home.png">
+
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">-->
+    <link rel="stylesheet" href="../statics/css/div.css">
+    <!--<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+    <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>-->
+
+    <script type="text/javascript" src="../js/lib/jquery-3.4.1.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/main.js"></script>
+
+    <title>SEA</title>
+</head>
+
+<body>
+
+    <header class="Header_class">
+        <img class="logo" src="../statics/images/home.png" alt="logo">
+        <ul class="nav__session" id="container">
+
+        </ul>
+        <nav id="Capaefectos">
+            <ul class="nav__links">
+                <li><a href="#" id="ocultar">Nuevos ingresos</a></li>
+                <li><a href="#" id="cargando">Clases</a></li>
+                <li><a href="#">Informes</a></li>
+                <li><a href="#">Novedades</a></li>
+                <li><a href="../mainpage.html">Principal</a></li>
+            </ul>
+        </nav>
+        <a class="cta" id="mostrar" href="#"><button>Contactos</button></a>
+    </header>
+
+    <form id="Form-sava-data-alumno" enctype="multipart/form-data">
+
+        <div class="container-espacio">
+
+        </div>
+
+        <div class="container-ingresos">
+            <label>Cedula</label>
+            <input type="text" required id="cedula" placeholder="cedula..">
+
+            <label>Nombres</label>
+            <input type="text" required id="Nombres" placeholder="Nombres..">
+
+            <label>Apellido</label>
+            <input type="text" required id="Apellido" placeholder="Apellido..">
+
+            <label>Fecha de nacimiento</label>
+            <input type="date" required id="Fecha">
+
+            <label>Edad</label>
+            <input type="text" required id="Edad" placeholder="Edad..">
+
+            <label>Sexo</label>
+            <select required id="Sexo">
+                <option value="MASCULINO">MASCULINO</option>
+                <option value="FEMENINO">FEMENINO</option>
+                <option value="NO BINARIO">NO BINARIO</option>
+            </select>
+
+            <label>Foto</label>
+            <input type="file" required id="Foto">
+
+
+            <label>Estado</label>
+            <select required id="Estado">
+                <option value="ACTIVO">ACTIVO</option>
+                <option value="INACTIVO">INACTIVO</option>
+                <option value="RETIRADO">RETIRADO</option>
+            </select>
+
+            <label>Periodo lectivo</label>
+            <input type="text" required id="Periodo" placeholder="Periodo lectivo..">
+
+            <label>Direccion</label>
+            <input type="text" required id="Direccion" placeholder="Direccion..">
+
+            <label>Teléfono</label>
+            <input type="text" required id="Teléfono" placeholder="Teléfono..">
+
+            <label>Último curso</label>
+            <input type="text" required id="curso" placeholder="Último curso..">
+
+            <label>Nombre del padre</label>
+            <input type="text" required id="Nombre_padre" placeholder="Nombre del padre..">
+
+            <label>Teléfono del padre</label>
+            <input type="text" required id="Telefono_padre" placeholder="Teléfono del padre..">
+
+            <label>Nombre de la madre</label>
+            <input type="text" required id="Nombre_madre" placeholder="Nombre de la madre..">
+
+            <label>Teléfono de la madre</label>
+            <input type="text" required id="Telefono_madre" placeholder="Teléfono de la madre..">
+
+            <label>Parentesco del representante</label>
+            <input type="text" required id="Parentesco" placeholder="Parentesco del representante..">
+
+            <label>Teléfono de emergencia</label>
+            <input type="text" required id="Telefono_emergencia" placeholder="Teléfono de emergencia..">
+
+            <label>Grupo sanguíneo</label>
+            <input type="text" required id="Grupo" placeholder="Grupo sanguíneo..">
+
+            <label>Peso</label>
+            <input type="text" required id="Peso" placeholder="Peso en Kgs..">
+
+            <label>Altura</label>
+            <input type="text" required id="Altura" placeholder="Altura en metros..">
+
+            <label>Medicinas contradictorias</label>
+            <input type="text" required id="Medicinas" placeholder="Medicinas contradictorias..">
+
+
+
+
+            <input type="submit" id="BtnSave" name="Guardar">
+        </div>
+    </form>
+
+    <!--<footer>
+        <div class="div-footer">
+            <ul class="nav-footers">
+                <li>
+                    <a href="https://www.linkedin.com/in/arturo-negreiros-saman%C3%A9z-8a34251a1/" target="_blank">
+                        <img src="../statics/icon_images/linkedin.png">
+                        <h4>linkedin</h4>
+                    </a>
+
+                </li>
+                <li>
+                    <a>
+                        <img src="../statics/icon_images/maps-and-location.png">
+                        <h4>Ubicación</h4>
+                    </a>
+
+                </li>
+                <li>
+                    <a>
+                        <img src="../statics/icon_images/phone.png">
+                        <h4>0990893426</h4>
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="container-espacio">
+
+        </div>
+    </footer>-->
+
+
+    <script src="../js/savadata/save.js"></script>
+</body>
+
+</html>

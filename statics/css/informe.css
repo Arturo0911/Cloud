@@ -1,0 +1,135 @@
+.informe_beca {
+    padding-top: 15px;
+    /* AQUI LE COLOCO UN PADDING PARA QUE NO CHOQUE CON EL NAVBAR*/
+}
+
+.Table_beca {
+    padding-top: 15px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.Table_beca th,
+tr,
+td {
+    border: 1px solid black;
+    padding-bottom: 5px;
+}
+
+.Table_beca th {
+    text-align: center;
+    margin-right: 5px;
+}
+
+.Form_ocultar {
+    background: rgba(0, 0, 0, .3);
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.Form_ocultar.visible {
+    visibility: visible;
+}
+
+.Contenido_ocultar_form {
+    background: #f8f8f8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .3);
+    border-radius: 3px;
+    font-family: "Montserrat", sans-serif;
+    padding: 15px;
+    text-align: center;
+    width: 600px;
+    opacity: 0;
+}
+
+.Contenido_ocultar_form.visible {
+    opacity: 1;
+}
+
+.Contenido_ocultar_form form .contenedor_inputs_ocultar {}
+
+.Contenido_ocultar_form form .contenedor_inputs_ocultar input {
+    width: 65%;
+    margin-bottom: 5px;
+    height: 25px;
+    line-height: 8px;
+    font-size: 12px;
+    border: 1px solid;
+    text-align: center;
+}
+
+.Contenido_ocultar_form form .contenedor_inputs_ocultar textarea {
+    width: 65%;
+    margin-bottom: 5px;
+    height: 70px;
+    line-height: 10px;
+    font-size: 12px;
+    border: 1px solid;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+.Contenido_ocultar_form .BtnSubmit {
+    width: 25%;
+    height: 40px;
+    line-height: 15px;
+    border: none;
+}
+
+.Contenido_ocultar_form .BtnClose {
+    width: 25%;
+    height: 40px;
+    line-height: 15px;
+    border: none;
+    background: #a73737;
+    background: -webkit-linear-gradient(to right, #7a2828, #a73737);
+    background: linear-gradient(to right, #7a2828, #a73737);
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+}
+
+.Contenido_ocultar_form .BtnClose:hover {
+    color: rgba( 94, 125, 227, .9)
+}
+
+.Btn_modify {
+    width: 100%;
+    border: none;
+    height: 40px;
+    background: green;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 5px;
+    color: whitesmoke;
+}
+
+.Btn_modify:hover {
+    color: teal;
+}
+
+.Btn_view {
+    width: 100%;
+    border: none;
+    height: 40px;
+    background: crimson;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 3px;
+    text-decoration: none;
+    margin: auto;
+    color: whitesmoke;
+}
+
+.Btn_view:hover {
+    color: teal;
+}

@@ -1,0 +1,150 @@
+.Table_workers {
+    width: 50%;
+    position: relative;
+    padding: 10px;
+    margin: auto;
+    background: #FFEFBA;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+}
+
+table,
+th,
+td {
+    margin-right: 5px;
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 18px;
+    text-align: center;
+}
+
+th {
+    font-family: "Montserrat", sans-serif;
+    align-items: left;
+    height: 50px;
+}
+
+td {
+    text-align: center;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-style: bold;
+}
+
+.Add {
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.Button_close {
+    margin-bottom: auto;
+    padding: 15px;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    overflow: scroll;
+}
+
+.overlay.active {
+    visibility: visible;
+}
+
+.popup {
+    background: #f8f8f8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .3);
+    border-radius: 3px;
+    font-family: "Montserrat", sans-serif;
+    padding: 15px;
+    text-align: center;
+    width: 600px;
+    opacity: 0;
+}
+
+.popup.active {
+    opacity: 1;
+}
+
+.popup form .contenedor-inputs {}
+
+.popup form .contenedor-inputs input {
+    width: 65%;
+    margin-bottom: 5px;
+    height: 25px;
+    line-height: 8px;
+    font-size: 12px;
+    border: 1px solid;
+    text-align: center;
+}
+
+.popup form .contenedor-inputs input[type=file] {
+    height: 6%;
+    padding-top: 5px;
+    line-height: 8px;
+    margin: auto;
+}
+
+.popup form .contenedor-inputs input[type=password] {
+    width: 65%;
+    margin-top: 5px;
+    height: 25px;
+    line-height: 8px;
+    font-size: 12px;
+    border: 1px solid;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.btn-close {
+    width: 25%;
+    padding: 0px 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: white;
+    background: #a73737;
+    background: -webkit-linear-gradient(to right, #7a2828, #a73737);
+    background: linear-gradient(to right, #7a2828, #a73737);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 3s ease all;
+}
+
+.popup form .btn-submit {
+    width: 25%;
+    padding: 0px 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: #FFFFFF;
+    background: #5e7de3;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 3s ease all;
+}
+
+.popup form .btn-submit:hover {
+    background: rgba( 94, 125, 227, .9);
+}
+
+.container-popup {
+    padding-bottom: 15px;
+}
+
+.popup form .contenedor-inputs h2 {
+    font-family: "Montserrat", sans-serif;
+}

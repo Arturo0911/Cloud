@@ -1,0 +1,156 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../statics/css/style.css" rel="stylesheet">
+    <link href="../statics/css/new_inserts.css" rel="stylesheet">
+    <link href="../statics/css/workers.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../statics/images/home.png">
+    <!--<link rel="stylesheet" href="../statics/datatables.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">-->
+    <link rel="stylesheet" href="../statics/css/div.css">
+    <!--<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+    <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>-->
+
+    <script type="text/javascript" src="../js/lib/jquery-3.4.1.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/main.js"></script>
+
+    <title>SEA</title>
+</head>
+
+<body>
+
+    <header class="Header_class" id="Header_class">
+        <img class="logo" src="../statics/images/home.png" alt="logo">
+        <ul class="nav__session" id="container">
+
+        </ul>
+        <nav id="Capaefectos">
+            <ul class="nav__links">
+                <li><a href="#" id="ocultar">Nuevos ingresos</a></li>
+                <li><a href="#" id="cargando">Clases</a></li>
+                <li><a href="#">Informes</a></li>
+                <li><a href="#">Novedades</a></li>
+                <li><a href="../mainpage.html">Principal</a></li>
+            </ul>
+        </nav>
+        <a class="cta" id="mostrar" href="#"><button>Contactos</button></a>
+    </header>
+    <button type="button" id="Appear"> Aparecer </button>
+    <div class="container-popup">
+        <form id="Query_workers">
+
+            <div class="container-espacio">
+
+            </div>
+
+            <div id="Revision_trabajadores">
+                <h2>Control de trabajadores
+                    <button type="button" class="Add" id="Add"> Agregar</button>
+                </h2>
+
+                <table id="TableWorkers" class="Table_workers">
+                    <thead>
+                        <th>
+                            Cedula
+                        </th>
+                        <th>
+                            Nombres
+                        </th>
+                        <th>
+                            Apellidos
+                        </th>
+                        <th>
+                            Departamento
+                        </th>
+                        <th>
+                            Jornada
+                        </th>
+                        <th>
+                            Acciones
+                        </th>
+                    </thead>
+                    <tbody id="workers">
+
+                    </tbody>
+                </table>
+            </div>
+
+
+        </form>
+
+        <div class="overlay" id="overlay">
+
+            <div class="popup" id="popup">
+                <form id="FormAddWork">
+                    <!--<button class="Button_close" type="button" id="Close-button">
+                        <img src="../statics/icon_images/close.png"  alt="close">
+                    </button>-->
+                    <div class="contenedor-inputs">
+                        <h2>Ingreso de datos de un nuevo trabajador</h2>
+
+                        <input type="text" id="cedula" required autofocus placeholder="Cedula..">
+                        <input type="text" id="nombres" required autofocus placeholder="Nombres..">
+                        <input type="text" id="apellidos" required autofocus placeholder="Apellidos..">
+                        <input type="file" id="Foto_work">
+                        <input type="text" id="direccion" required autofocus placeholder="Direccion..">
+                        <input type="text" id="telefono" required autofocus placeholder="Telefono..">
+                        <input type="text" id="email" required autofocus placeholder="Email..">
+                        <input type="text" id="departamento" required autofocus placeholder="Departamento..">
+                        <input type="text" id="cargo" required autofocus placeholder="Cargo..">
+                        <input type="text" id="jornada" required autofocus placeholder="jornada..">
+                        <input type="text" id="usuario" required autofocus placeholder="Usuario..">
+                        <input type="password" id="clave" required autofocus placeholder="Clave..">
+                    </div>
+                    <input type="submit" class="btn-submit">
+                    <input type="button" class="btn-close" id="Close-button" value="Cerrar">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!--<footer>
+        <div class="div-footer">
+            <ul class="nav-footers">
+                <li>
+                    <a href="https://www.linkedin.com/in/arturo-negreiros-saman%C3%A9z-8a34251a1/" target="_blank">
+                        <img src="../statics/icon_images/linkedin.png">
+                        <h4>linkedin</h4>
+                    </a>
+
+                </li>
+                <li>
+                    <a>
+                        <img src="../statics/icon_images/maps-and-location.png">
+                        <h4>Ubicación</h4>
+                    </a>
+
+                </li>
+                <li>
+                    <a>
+                        <img src="../statics/icon_images/phone.png">
+                        <h4>0990893426</h4>
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="container-espacio">
+
+        </div>
+    </footer>-->
+
+
+    <script src="../js/fetchdata/fetchdata.js"></script>
+    <script type="text/javascript" src="../statics/datatables.min.js"></script>
+</body>
+
+</html>

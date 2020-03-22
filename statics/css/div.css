@@ -1,0 +1,42 @@
+/*.table-dias {
+    background: red;
+}*/
+
+.title-informe {
+    margin: auto;
+    padding: 10px;
+}
+
+.container-information-left h3 {
+    margin: auto;
+}
+
+.form-information-2 {
+    width: 92%;
+    height: 60%;
+    padding: 30px;
+    /*background: green;*/
+    background: #FFEFBA;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+    margin: auto;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.container-information-left {
+    width: 16%;
+    height: 30%;
+    padding: 30px;
+    background: transparent;
+    /*background: red;
+    background: #FFEFBA;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);*/
+    /*border: 1px solid black;*/
+    /*position: relative;*/
+    /*margin: 10px 0 0 10px;
+    position: absolute;
+    top: 632px;
+    left: 90px;*/
+}

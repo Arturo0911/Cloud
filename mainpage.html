@@ -1,0 +1,119 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="statics/css/style.css" rel="stylesheet">
+    <link href="statics/css/new_inserts.css" rel="stylesheet">
+    <link rel="shortcut icon" href="statics/images/home.png">
+
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">-->
+    <link rel="stylesheet" href="statics/css/div.css">
+
+    <title>SEA</title>
+</head>
+
+<body>
+
+    <header class="Header_class" id="Header_class">
+        <img class="logo" id="logo" src="statics/images/home.png" alt="logo">
+        <ul class="nav__session" id="container">
+
+        </ul>
+        <nav id="Capaefectos">
+            <ul class="nav__links">
+                <li><a href="#" id="ocultar">Nuevos ingresos</a></li>
+                <li><a href="#" id="cargando">Clases</a></li>
+                <li><a href="navigation/informe.html">Informes</a></li>
+                <li><a href="#">Novedades</a></li>
+                <li><a href="#">Principal</a></li>
+            </ul>
+        </nav>
+        <a class="cta" id="mostrar" href="#"><button type="submit" onclick="location.href='index.html'">Log out</button></a>
+    </header>
+
+    <!--<button type="button" id="Appear"> Aparecer </button>-->
+    <form action="">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td> Estado de alumnos.</td>
+                                <td> Estado de usuarios.</td>
+                                <td> Estado de trabajadores.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="statics/images/student.png">
+                                    <!--<button class="button-danger">Modificar</button>-->
+
+                                    <button class="button-view" type="button" value="Ver" onclick="location.href='navigation/new_user.php'">Ver</button>
+                                </td>
+                                <td>
+                                    <img src="statics/images/organization.png">
+                                    <button type="button" class="button-view" onclick="location.href='navigation/new_user.html'">Ver</button>
+                                </td>
+
+                                <td>
+                                    <img src="statics/images/worker (1).png">
+                                    <button type="button" class="button-view" onclick="location.href='navigation/workers.html'">Ver</button>
+                                </td>
+                            </tr>
+
+                        </thead>
+                        <tbody id="DataUsers">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="week_container">
+        <h3 class="titulo_informe">Informe semanal</h3>
+        <table class="table_week">
+
+            <thead>
+                <div class="Buttons_tables">
+                    <button type="submit" class="Button_week" id="ButtonAdd"> Agregar</button>
+                </div>
+                <th>Fecha</th>
+                <th>Titulo</th>
+
+            </thead>
+            <tbody id="Eventos_data">
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="Hide_form" id="Hide_form">
+        <div class="popup_form" id="popup_form">
+            <form id="Form_eventos">
+                <div class="contenedor_inputs_weeks">
+                    <h3>Ingreso de nuevos eventos</h3>
+                    <input type="date" id="Fecha">
+                    <input type="text" id="Dia" placeholder="Día del informe...">
+                    <input type="text" id="Cedula" placeholder="Cedula de los participantes...">
+                    <input type="text" id="Nombres" placeholder="Nombres de los involucrados...">
+                    <input type="text" id="Titulo" placeholder="Titulo del informe...">
+                    <input type="text" id="Descripcion" placeholder="Descripcion del informe...">
+                    <input class="Btn_sumbit_week" type="submit" id="Submit_eventos" value="Guardar">
+                    <input class="Btn_close_week" type="Button" id="Btn_close_week" value="Close">
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="js/lib/jquery-3.4.1.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

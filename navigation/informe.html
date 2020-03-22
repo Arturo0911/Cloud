@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../statics/css/style.css" rel="stylesheet">
+    <link href="../statics/css/new_inserts.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../statics/images/home.png">
+    <link rel="stylesheet" href="../statics/css/informe.css">
+    <link rel="stylesheet" href="../statics/css/div.css">
+    <script type="text/javascript" src="../js/lib/jquery-3.4.1.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/main.js"></script>
+
+    <title>SEA</title>
+</head>
+
+<body>
+
+    <header class="Header_class">
+        <img class="logo" src="../statics/images/home.png" alt="logo">
+        <ul class="nav__session" id="container">
+        </ul>
+        <nav id="Capaefectos">
+            <ul class="nav__links">
+                <li><a href="#" id="ocultar">Nuevos ingresos</a></li>
+                <li><a href="#" id="cargando">Clases</a></li>
+                <li><a href="informe.html">Informes</a></li>
+                <li><a href="#">Novedades</a></li>
+                <li><a href="../mainpage.html">Principal</a></li>
+            </ul>
+        </nav>
+        <a class="cta" id="mostrar" href="#"><button>Contactos</button></a>
+    </header>
+
+
+    <div class="informe_beca" id="informe_beca">
+        <form>
+            <table class="Table_beca">
+                <h2>Informe de las becas otorgadas</h2>
+                <button type="button" id="BtnAgregar"> Agregar</button>
+                <thead>
+                    <th>Tipo de beca</th>
+                    <th>Cedula</th>
+                    <th>Nombres del becado</th>
+                    <th>Comentarios adicionales</th>
+                    <th>Acciones</th>
+                </thead>
+                <tbody id="FetchDataBecas">
+
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+
+    <div class="Form_ocultar" id="Form_ocultar">
+        <div class="Contenido_ocultar_form" id="Contenido_ocultar_form">
+            <form id="Form_becas">
+                <div class="contenedor_inputs_ocultar">
+                    <input type="text" id="Tipo_beca" placeholder="Tipo de beca...">
+                    <input type="text" id="Cedula" placeholder="Cedula del becado...">
+                    <input type="text" id="Nombres" placeholder="Nombres del becado...">
+                    <textarea id="Comentarios" placeholder="Comentarios acerca de la beca..."></textarea>
+                </div>
+                <input class="BtnSubmit" type="submit" id="BtnSubmit" value="Guardar">
+                <input class="BtnClose" type="Button" id="BtnClose" value="Cerrar">
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/informes/informes.js"></script>
+</body>
+
+</html>
