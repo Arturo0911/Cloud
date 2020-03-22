@@ -17,7 +17,9 @@ $(document).ready(function() {
         });
 
         $('#container').html(template);
-
+        alert('Bienvenido Sr/Sra: ' +
+            Credenciales_User[0].nombres + ' ' +
+            Credenciales_User[0].apellidos);
     });
 
 
