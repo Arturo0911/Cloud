@@ -25,9 +25,9 @@ $(document).ready(function() {
                 Credenciales_User[0].nombres + ' ' +
                 Credenciales_User[0].apellidos);
         }
-
+        Saludo();
     });
-    Saludo();
+
 
 
 
