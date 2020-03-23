@@ -21,7 +21,7 @@ $(document).ready(function() {
         $('#container').html(template);
 
         function Saludo() {
-            alert('Bienvenido Sr/Sra: ' +
+            alert('Bienvenido Sr.: ' +
                 Credenciales_User[0].nombres + ' ' +
                 Credenciales_User[0].apellidos);
         }
