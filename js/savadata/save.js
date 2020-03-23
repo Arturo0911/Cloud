@@ -1,7 +1,4 @@
 $(document).ready(function() {
-    alert('Está funcionando el save.js');
-    /*let formData = new FormData($('#Form-sava-data-alumno')[0]);*/
-
 
     $('#Form-sava-data-alumno').submit(function(e) {
         let Data = {
