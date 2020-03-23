@@ -61,10 +61,25 @@
                     <input type="text" id="Tipo_beca" placeholder="Tipo de beca...">
                     <input type="text" id="Cedula" placeholder="Cedula del becado...">
                     <input type="text" id="Nombres" placeholder="Nombres del becado...">
-                    <textarea id="Comentarios" placeholder="Comentarios acerca de la beca..."></textarea>
+                    <textarea id="Comentarios" rows="30" placeholder="Comentarios acerca de la beca..."></textarea>
                 </div>
                 <input class="BtnSubmit" type="submit" id="BtnSubmit" value="Guardar">
                 <input class="BtnClose" type="Button" id="BtnClose" value="Cerrar">
+            </form>
+        </div>
+    </div>
+
+    <div class="Container_modify" id="Container_modify">
+        <div class="sub_containter_modify" id="sub_containter_modify">
+            <form id="Form_modify">
+                <div class="Containers_inputs_modify" id="Containers_inputs_modify">
+                    <input type="text" id="Modify_tipo_beca">
+                    <input type="text" id="Modify_cedula" disabled>
+                    <input type="text" id="Modify_nombres">
+                    <textarea id="Modify_comentarios_beca" rows="30"></textarea>
+                </div>
+                <input type="submit" class="BtnModify" id="BtnModify" value="Modificar">
+                <input type="button" class="BtnCerrarModify" id="BtnCerrarModify" value="Cerrar">
             </form>
         </div>
     </div>

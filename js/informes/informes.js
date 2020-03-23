@@ -28,13 +28,11 @@ $(document).ready(function() {
 
 
     buttonAdd.addEventListener('click', function() {
-        console.log('funcionando boton agregar');
         FormOcultar.classList.add('visible');
         Contenido_ocultar_form.classList.add('visible');
     });
 
     buttonClose.addEventListener('click', function() {
-        console.log('funcionando boton quitar');
         FormOcultar.classList.remove('visible');
         Contenido_ocultar_form.classList.remove('visible');
     });
@@ -59,14 +57,50 @@ $(document).ready(function() {
         event.preventDefault();
 
     });
+
+
+    let BtnModifyClose = document.getElementById('BtnCerrarModify'),
+        FormModify = document.getElementById('Container_modify'),
+        SubFormModify = document.getElementById('sub_containter_modify');
+
+
+    BtnModifyClose.addEventListener('click', function() {
+        FormModify.classList.remove('visible');
+        SubFormModify.classList.remove('visible');
+    });
+
+
     $(document).on('click', '.Btn_modify', function() {
         let element = $(this)[0].parentElement.parentElement;
-        //console.log(element);
         let id_beca = $(element).attr('cedulaBeca');
-        console.log(id_beca);
-        /*$.post('../php/updatedata/updatebecas', function() {
+        $.post('../php/backend/updatedata/getdatabecas.php', { id_beca }, function(response) {
+            const JsonData = JSON.parse(response);
 
-        });*/
+            $('#Modify_tipo_beca').val(JsonData.tipo_beca);
+            $('#Modify_cedula').val(JsonData.cedula_becado);
+            $('#Modify_nombres').val(JsonData.nombres_becado);
+            $('#Modify_comentarios_beca').val(JsonData.comentarios_becado);
+            FormModify.classList.add('visible');
+            SubFormModify.classList.add('visible');
+        });
+    });
+
+
+    $('#Form_modify').submit(function(e) {
+
+        const DataModify = {
+            modificar_tipo_beca: $('#Modify_tipo_beca').val(),
+            modificar_cedula: $('#Modify_cedula').val(),
+            modificar_nombres: $('#Modify_nombres').val(),
+            modificar_comentarios: $('#Modify_comentarios_beca').val()
+        }
+
+        $.post('../php/backend/updatedata/updatebecas.php', DataModify, function(respuesta) {
+            alert(respuesta);
+            $('#Form_modify').trigger('reset');
+            GetBecas();
+        });
+        e.preventDefault();
     });
 
 });

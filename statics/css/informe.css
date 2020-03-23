@@ -133,3 +133,78 @@ td {
 .Btn_view:hover {
     color: teal;
 }
+
+.Container_modify {
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.Container_modify.visible {
+    visibility: visible;
+}
+
+.sub_containter_modify {
+    background: #f8f8f8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .3);
+    border-radius: 3px;
+    font-family: "Montserrat", sans-serif;
+    padding: 15px;
+    text-align: center;
+    width: 600px;
+    opacity: 0;
+}
+
+.sub_containter_modify.visible {
+    opacity: 1;
+}
+
+.sub_containter_modify form .Containers_inputs_modify {}
+
+.sub_containter_modify form .Containers_inputs_modify input {
+    width: 65%;
+    margin-bottom: 5px;
+    height: 25px;
+    line-height: 8px;
+    font-size: 12px;
+    border: 1px solid;
+    text-align: center;
+}
+
+.sub_containter_modify form .Containers_inputs_modify textarea {
+    width: 65%;
+    margin-bottom: 5px;
+    height: 70px;
+    line-height: 10px;
+    font-size: 12px;
+    border: 1px solid;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+.sub_containter_modify .BtnModify {
+    width: 25%;
+    height: 40px;
+    line-height: 15px;
+    border: none;
+}
+
+.sub_containter_modify .BtnCerrarModify {
+    width: 25%;
+    height: 40px;
+    line-height: 15px;
+    border: none;
+    background: #a73737;
+    background: -webkit-linear-gradient(to right, #7a2828, #a73737);
+    background: linear-gradient(to right, #7a2828, #a73737);
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+}
