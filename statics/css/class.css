@@ -1,0 +1,195 @@
+.containers_inputs {
+    padding-bottom: 15px;
+    padding-left: 525px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.ButonAddClass {
+    border-radius: 15px;
+    width: 15%;
+    padding: 0px 20px;
+    height: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+    background: #5e7de3;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 3s ease all;
+}
+
+.ButonCloseClass {
+    border-radius: 15px;
+    width: 15%;
+    padding: 0px 20px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    background: #a73737;
+    background: -webkit-linear-gradient(to right, #7a2828, #a73737);
+    background: linear-gradient(to right, #7a2828, #a73737);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 3s ease all;
+}
+
+.ButonEstadoClass {
+    border-radius: 15px;
+    width: 15%;
+    padding: 0px 20px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    background: #52c234;
+    background: -webkit-linear-gradient(to right, #061700, #52c234);
+    background: linear-gradient(to right, #061700, #52c234);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 3s ease all;
+}
+
+.ButonInformesClass {
+    border-radius: 15px;
+    width: 15%;
+    padding: 0px 20px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    background: #485563;
+    background: -webkit-linear-gradient(to right, #29323c, #485563);
+    background: linear-gradient(to right, #29323c, #485563);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 3s ease all;
+}
+
+.ButonRegistrosClass {
+    border-radius: 15px;
+    width: 15%;
+    padding: 0px 20px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    background: #4b6cb7;
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
+    background: linear-gradient(to right, #182848, #4b6cb7);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 3s ease all;
+}
+
+.ButonNovedadesClass {
+    border-radius: 15px;
+    width: 15%;
+    padding: 0px 20px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    background: #00bf8f;
+    background: -webkit-linear-gradient(to right, #001510, #00bf8f);
+    background: linear-gradient(to right, #001510, #00bf8f);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 3s ease all;
+}
+
+.Tables_Class {
+    width: 100%;
+    margin: auto;
+    background: white;
+    border: 1px solid black;
+}
+
+.Tables_Class th,
+td {
+    border: 1px solid black;
+}
+
+.form_clases_father {
+    background: rgba(0, 0, 0, .3);
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    position: fixed;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.form_clases_father.visible {
+    visibility: visible;
+}
+
+.form_clases_child {
+    background: #f8f8f8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .3);
+    border-radius: 3px;
+    font-family: "Montserrat", sans-serif;
+    padding: 15px;
+    text-align: center;
+    width: 600px;
+    opacity: 0;
+}
+
+.form_clases_child.visible {
+    opacity: 1;
+}
+
+.form_clases_child form .form_inputs input {
+    width: 65%;
+    margin-bottom: 5px;
+    height: 25px;
+    line-height: 8px;
+    font-size: 12px;
+    border: 1px solid;
+    text-align: center;
+}
+
+.form_clases_child form .form_inputs select {
+    width: 65%;
+    margin-bottom: 5px;
+    height: 25px;
+    line-height: 8px;
+    font-size: 12px;
+    border: 1px solid;
+    text-align: center;
+}
+
+.form_clases_child form .BtnSubmit {
+    border-radius: 15px;
+    width: 25%;
+    padding: 0px 20px;
+    height: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+    background: #5e7de3;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 3s ease all;
+}
+
+.form_clases_child form .BtnClose {
+    border-radius: 15px;
+    width: 25%;
+    padding: 0px 20px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    background: #a73737;
+    background: -webkit-linear-gradient(to right, #7a2828, #a73737);
+    background: linear-gradient(to right, #7a2828, #a73737);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 3s ease all;
+}

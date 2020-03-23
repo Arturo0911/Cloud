@@ -1,7 +1,7 @@
 <?php include('includes/header.php');?>
 <form action="process/save_data_alumno.php" method="POST" enctype="multipart/form-data">
 
-    <div class="container-ingresos">
+    <!--<div class="container-ingresos">
         <label >Cedula</label>
         <input type="text" required  name="cedula" placeholder="cedula..">
 
@@ -81,7 +81,7 @@
         
 
         <input type="submit" value="Submit" name="Guardar">
-    </div>
+    </div>-->
 
 </form>
 <?php include('includes/footer.php'); ?>

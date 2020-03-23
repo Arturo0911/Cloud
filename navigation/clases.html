@@ -1,0 +1,90 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../statics/css/style.css" rel="stylesheet">
+    <link href="../statics/css/new_inserts.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../statics/images/home.png">
+    <link rel="stylesheet" href="../statics/css/informe.css">
+    <link rel="stylesheet" href="../statics/css/div.css">
+
+
+    <!--Aqui referenciamos el archivo de css calss.css para el diseño de las tablas-->
+    <link rel="stylesheet" href="../statics/css/class.css">
+    <script type="text/javascript" src="../js/lib/jquery-3.4.1.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/main.js"></script>
+
+    <title>SEA</title>
+</head>
+
+<body>
+
+    <header class="Header_class">
+        <img class="logo" src="../statics/images/home.png" alt="logo">
+        <ul class="nav__session" id="container">
+        </ul>
+        <nav id="Capaefectos">
+            <ul class="nav__links">
+                <li><a href="#" id="ocultar">Nuevos ingresos</a></li>
+                <li><a href="#" id="cargando">Clases</a></li>
+                <li><a href="informe.html">Informes</a></li>
+                <li><a href="#">Novedades</a></li>
+                <li><a href="../mainpage.html">Principal</a></li>
+            </ul>
+        </nav>
+        <a class="cta" id="mostrar" href="#"><button>Contactos</button></a>
+    </header>
+
+    <div class="container_clases_father">
+        <div>
+            <div class="containers_inputs">
+                <input type="button" id="ButonAddClass" class="ButonAddClass" value="Clase">
+                <input type="button" id="ButonCloseClass" class="ButonCloseClass" value="Docente">
+                <input type="button" id="ButonAddClass" class="ButonEstadoClass" value="Estado">
+                <input type="button" id="ButonCloseClass" class="ButonInformesClass" value="Informes">
+                <input type="button" id="ButonAddClass" class="ButonRegistrosClass" value="Registros">
+                <input type="button" id="ButonCloseClass" class="ButonNovedadesClass" value="Novedades">
+            </div>
+
+            <table class="Tables_Class">
+                <thead>
+                    <th>Especialidad</th>
+                    <th>Materia</th>
+                    <th>Cedula</th>
+                    <th>Nombres del profesor</th>
+                </thead>
+                <tbody id="Clases">
+
+                </tbody>
+            </table>
+            <form>
+
+            </form>
+        </div>
+    </div>
+
+
+    <div class="form_clases_father" id="form_clases_father">
+        <div class="form_clases_child" id="form_clases_child">
+            <form id="FormAddClases">
+                <div class="form_inputs" id="form_inputs">
+                    <input type="text" id="especialidad" placeholder="Especialidad">
+                    <input type="text" id="materia" placeholder="Materia">
+                    <select id="cedula">
+                        <option></option>
+                    </select>
+                    <input type="text" disabled id="Nombres" placeholder="Nombres del docente">
+                </div>
+                <button class="BtnSubmit" id="BtnSubmit" type="submit">Agregar</button>
+                <button class="BtnClose" id="BtnClose" type="button">Cerrar</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="../js/class/class.js"></script>
+</body>
+
+</html>
