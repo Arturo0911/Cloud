@@ -98,6 +98,8 @@ $(document).ready(function() {
         $.post('../php/backend/updatedata/updatebecas.php', DataModify, function(respuesta) {
             alert(respuesta);
             $('#Form_modify').trigger('reset');
+            FormModify.classList.remove('visible');
+            SubFormModify.classList.remove('visible');
             GetBecas();
         });
         e.preventDefault();
