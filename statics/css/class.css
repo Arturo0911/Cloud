@@ -149,7 +149,7 @@ td {
 .form_clases_child form .form_inputs input {
     width: 65%;
     margin-bottom: 5px;
-    height: 25px;
+    height: 40px;
     line-height: 8px;
     font-size: 12px;
     border: 1px solid;
@@ -159,11 +159,14 @@ td {
 .form_clases_child form .form_inputs select {
     width: 65%;
     margin-bottom: 5px;
-    height: 25px;
+    height: 40px;
     line-height: 8px;
     font-size: 12px;
     border: 1px solid;
     text-align: center;
+    color: black;
+    align-items: center;
+    justify-content: center;
 }
 
 .form_clases_child form .BtnSubmit {
@@ -238,7 +241,7 @@ td {
 .form_docentes_child form .form_inputs_docentes input {
     width: 25%;
     margin-bottom: 5px;
-    height: 25px;
+    height: 40px;
     line-height: 8px;
     font-size: 12px;
     border: 1px solid;
@@ -247,8 +250,8 @@ td {
 
 .form_docentes_child form .form_inputs_docentes input[type=date] {
     width: 25%;
-    margin-bottom: 5px;
-    height: 25px;
+    margin: 8px 0px 5px;
+    height: 40px;
     line-height: 8px;
     font-size: 12px;
     border: 1px solid;
@@ -258,7 +261,7 @@ td {
 .form_docentes_child form .form_inputs_docentes input[type=number] {
     width: 25%;
     margin: 8px 0px 5px;
-    height: 25px;
+    height: 40px;
     line-height: 8px;
     font-size: 12px;
     border: 1px solid;
@@ -268,7 +271,7 @@ td {
 .form_docentes_child form .form_inputs_docentes input[type=tel] {
     width: 25%;
     margin: 8px 0px 5px;
-    height: 25px;
+    height: 40px;
     line-height: 8px;
     font-size: 12px;
     border: 1px solid;
@@ -278,7 +281,7 @@ td {
 .form_docentes_child form .form_inputs_docentes input[type=email] {
     width: 25%;
     margin: 8px 0px 5px;
-    height: 25px;
+    height: 40px;
     line-height: 8px;
     font-size: 12px;
     border: 1px solid;
@@ -287,8 +290,8 @@ td {
 
 .form_docentes_child form .form_inputs_docentes input[type=file] {
     width: 25%;
-    margin: 8px 0px 5px;
-    height: 25px;
+    margin: 18px 0px 5px;
+    height: 40px;
     line-height: 8px;
     font-size: 12px;
     border: 1px solid;
@@ -298,7 +301,7 @@ td {
 .form_docentes_child form .form_inputs_docentes select {
     width: 25%;
     margin: 8px 0px 5px;
-    height: 25px;
+    height: 40px;
     line-height: 8px;
     font-size: 12px;
     border: 1px solid;
@@ -306,9 +309,10 @@ td {
 }
 
 .form_docentes_child form .form_inputs_docentes textarea {
+    padding: 15px;
     width: 76%;
     margin: 8px 0px 5px;
-    height: 50px;
+    height: 100px;
     line-height: 8px;
     font-size: 12px;
     border: 1px solid;

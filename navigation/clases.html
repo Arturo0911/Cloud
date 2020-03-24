@@ -73,9 +73,9 @@
                     <input type="text" id="especialidad" placeholder="Especialidad">
                     <input type="text" id="materia" placeholder="Materia">
                     <select id="cedula">
-                        <option></option>
+                        
                     </select>
-                    <input type="text" disabled id="Nombres" placeholder="Nombres del docente">
+                    <input type="text" disabled id="Nombres">
                 </div>
                 <button class="BtnSubmit" id="BtnSubmit" type="submit">Agregar</button>
                 <button class="BtnClose" id="BtnClose" type="button">Cerrar</button>
@@ -96,30 +96,32 @@
                     <input type="text" id="ApellidosDoc" placeholder="Apellidos...">
                     <input type="file" id="FotoDoc">
                     <input type="date" id="FechaNacimientoDoc" placeholder="Fecha de nacimiento">
-                    <select id="EstadoDoc">
-                        <option value="Soltero">Soltero</option>
-                        <option value="Casado">Casado</option>
-                        <option value="Divorciado">Divorciado</option>
-                        <option value="UnionLibre">Union Libre</option>
-                    </select>
+
                     <input type="text" id="especialidadDoc" placeholder="Especialidad...">
                     <input type="text" id="DireccionDoc" placeholder="Direccion...">
                     <input type="email" id="EmailDoc" placeholder="email ...">
                     <input type="tel" id="TelefonoDoc" placeholder="Telefono...">
 
+
+                    <input type="number" id="PesoCorporal" placeholder="Peso corporal...">
+                    <input type="number" id="AlturaCorporal" placeholder="Altura corporal...">
+
+                    <input type="text" id="Alergias" placeholder="Alergias...">
+                    <input type="text" id="Patologias" placeholder="Patologias...">
                     <select id="GrupoSanguineo">
-                        <option value="Apositivo">A positivo</option>
+                        <option value="Apositivo" selected>A positivo</option>
                         <option value="Bpositivo">B positivo</option>
                         <option value="Anegativo">A negativo</option>
                         <option value="Bnegativo">B negativo</option>
                         <option value="Opositivo">O positivo</option>
                         <option value="Onegativo">O negativo</option>
                     </select>
-                    <input type="number" id="PesoCorporal" placeholder="Peso corporal...">
-                    <input type="number" id="AlturaCorporal" placeholder="Altura corporal...">
-
-                    <input type="text" id="Alergias" placeholder="Alergias...">
-                    <input type="text" id="Patologias" placeholder="Patologias...">
+                    <select id="EstadoDoc">
+                        <option value="Soltero" selected>Soltero</option>
+                        <option value="Casado">Casado</option>
+                        <option value="Divorciado">Divorciado</option>
+                        <option value="UnionLibre">Union Libre</option>
+                    </select>
                     <textarea type="text" id="Medicinas" placeholder="Medicinas contradictorias..."></textarea>
                 </div>
                 <button class="BtnSubmitDocentes" id="BtnSubmitDocentes" type="submit">Agregar</button>

@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-
     let ButtonAdd = document.getElementById('ButonAddClass'),
         ButtonClose = document.getElementById('ButonCloseClass'),
         ButtonCacnel = document.getElementById('BtnClose'),
@@ -40,6 +39,37 @@ $(document).ready(function() {
 
         });
     }
+
+    let cedulaDoc = document.getElementById('cedula');
+    cedulaDoc.addEventListener('click', function() {
+        Dataverificar = {
+            cedulaverifi: $('#cedula').val()
+        };
+        $.post('../php/backend/docentes/getnames.php', Dataverificar, function(respuesta) {
+            const datosDoc = JSON.parse(respuesta);
+            console.log(respuesta);
+            console.log(datosDoc.nombres);
+            //console.log(respuesta.nombres);
+            $('#Nombres').val(datosDoc.nombres + ' ' + datosDoc.apellidos);
+        });
+    });
+
+    $('#FormAddClases').submit(function(e) {
+
+        DataClasesadd = {
+            especialidad: $('#especialidad').val(),
+            materia: $('#materia').val(),
+            cedula: $('#cedula').val(),
+            Nombres: $('#Nombres').val()
+        };
+        $.post('../php/backend/clases/addclases.php', DataClasesadd, function(response) {
+            alert(response);
+        });
+        e.preventDefault();
+    });
+
+
+
 
     Fetch_docentes_clases();
 });
