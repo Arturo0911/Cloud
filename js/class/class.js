@@ -24,10 +24,8 @@ $(document).ready(function() {
 
     function Fetch_docentes_clases() {
         $.get('../php/backend/clases/getclases.php', function(response) {
-            //console.log(response);
             const ClasesData = JSON.parse(response);
             let templates = '';
-            console.log(ClasesData);
             ClasesData.forEach(element => {
                 templates += `
                 <tr>

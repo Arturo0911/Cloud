@@ -75,7 +75,8 @@ $(document).ready(function() {
         let id_beca = $(element).attr('cedulaBeca');
         $.post('../php/backend/updatedata/getdatabecas.php', { id_beca }, function(response) {
             const JsonData = JSON.parse(response);
-
+            console.log(response);
+            console.log(JsonData);
             $('#Modify_tipo_beca').val(JsonData.tipo_beca);
             $('#Modify_cedula').val(JsonData.cedula_becado);
             $('#Modify_nombres').val(JsonData.nombres_becado);
