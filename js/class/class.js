@@ -39,19 +39,6 @@ $(document).ready(function() {
                 `
             });
             $('#Clases').html(templates);
-            /*let ClasesData = JSON.parse(response);
-            let templates = '';
-            ClasesData.forEach(element => {
-                templates += `
-                <tr>
-                    <td>${element.nombre_materia}</td>
-                    <td>${element.grupo_especialidad}</td>
-                    <td>${element.director_cedula}</td>
-                    <td>${element.director_nombre}</td>
-                </tr>
-                `
-                $('#Clases').html(templates);
-            });*/
 
         });
     }
