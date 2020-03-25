@@ -91,23 +91,23 @@
         <div class="form_docentes_child" id="form_docentes_child">
             <form id="FormAddDocentes" class="FormAddDocentes" role="form" enctype="multipart/form-data">
                 <div class="form_inputs_docentes" id="form_inputs_docentes">
-                    <input type="text" id="cedulaDoc" placeholder="Cedula...">
-                    <input type="text" id="NombresDoc" placeholder="Nombres...">
-                    <input type="text" id="ApellidosDoc" placeholder="Apellidos...">
+                    <input type="text" id="cedulaDoc" maxlength="30" placeholder="Cedula...">
+                    <input type="text" id="NombresDoc" maxlength="50" placeholder="Nombres...">
+                    <input type="text" id="ApellidosDoc" maxlength="50" placeholder="Apellidos...">
                     <input type="file" id="FotoDoc">
                     <input type="date" id="FechaNacimientoDoc" placeholder="Fecha de nacimiento">
 
-                    <input type="text" id="especialidadDoc" placeholder="Especialidad...">
-                    <input type="text" id="DireccionDoc" placeholder="Direccion...">
-                    <input type="email" id="EmailDoc" placeholder="email ...">
-                    <input type="tel" id="TelefonoDoc" placeholder="Telefono...">
+                    <input type="text" id="especialidadDoc" maxlength="30" placeholder="Especialidad...">
+                    <input type="text" id="DireccionDoc" maxlength="50" placeholder="Direccion...">
+                    <input type="email" id="EmailDoc" maxlength="50" placeholder="email ...">
+                    <input type="tel" id="TelefonoDoc" maxlength="50" placeholder="Telefono...">
 
 
-                    <input type="number" id="PesoCorporal" placeholder="Peso corporal...">
-                    <input type="number" id="AlturaCorporal" placeholder="Altura corporal...">
+                    <input type="number" id="PesoCorporal" step="any" placeholder="Peso corporal...">
+                    <input type="number" id="AlturaCorporal" step="any" placeholder="Altura corporal...">
 
-                    <input type="text" id="Alergias" placeholder="Alergias...">
-                    <input type="text" id="Patologias" placeholder="Patologias...">
+                    <input type="text" id="Alergias" maxlength="50" placeholder="Alergias...">
+                    <input type="text" id="Patologias" maxlength="50" placeholder="Patologias...">
                     <select id="GrupoSanguineo">
                         <option value="Apositivo" selected>A positivo</option>
                         <option value="Bpositivo">B positivo</option>
@@ -122,7 +122,7 @@
                         <option value="Divorciado">Divorciado</option>
                         <option value="UnionLibre">Union Libre</option>
                     </select>
-                    <textarea type="text" id="Medicinas" placeholder="Medicinas contradictorias..."></textarea>
+                    <textarea type="text" id="Medicinas" maxlength="200" placeholder="Medicinas contradictorias..."></textarea>
                 </div>
                 <button class="BtnSubmitDocentes" id="BtnSubmitDocentes" type="submit">Agregar</button>
                 <button class="BtnCloseDocentes" id="BtnCloseDocentes" type="button">Cerrar</button>

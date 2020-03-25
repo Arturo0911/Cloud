@@ -80,7 +80,7 @@ $(document).ready(function() {
 
 
 
-    $('#ocultar').click(function(event) {
+    /*$('#ocultar').click(function(event) {
         event.preventDefault();
         $('#Capaefectos').fadeOut();
         console.log('se está presionando el boton de ocultar');
@@ -106,7 +106,7 @@ $(document).ready(function() {
     $('#Appear').click(function(event) {
         event.preventDefault();
         $('#Header_class').show(2000);
-    });
+    });*/
 
 
     let ApperButton = document.getElementById('ButtonAdd'),

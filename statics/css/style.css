@@ -359,3 +359,9 @@ h3 {
     border-radius: 50px;
     text-align: center;
 }
+
+.Banner_container {
+    background: transparent;
+    border: none;
+    margin: auto;
+}
