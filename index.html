@@ -19,23 +19,16 @@
 
     <form class="formulario" id="form-login">
 
-        <!--<div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>-->
-
         <h3><strong> Inicio de sesión</h3>
         <div class="contenedor">
             <div class="input-contenedor">
                 <i class="fas fa-user-lock icon"></i>
-                <input type="text" id="usuario" placeholder="usuario">
+                <input type="text" pattern="[A-Za-z0-9_-]{1,15}" required id="usuario" placeholder="usuario">
             </div>
 
             <div class="input-contenedor">
                 <i class="fas fa-unlock-alt icon"></i>
-                <input type="password" id="clave" placeholder="contraseña">
+                <input type="password" pattern="[A-Za-z0-9_-]{0,15}" required id="clave" placeholder="contraseña">
             </div>
 
             <button type="submit" src="#" name="Value" value="Login" class="button"> Log in</button>
