@@ -28,8 +28,8 @@ $(document).ready(function() {
             ClasesData.forEach(element => {
                 templates += `
                 <tr>
-                    <td>${element.nombre_materia}</td>
                     <td>${element.grupo_especialidad}</td>
+                    <td>${element.nombre_materia}</td>
                     <td>${element.director_cedula}</td>
                     <td>${element.director_nombre}</td>
                 </tr>
@@ -64,6 +64,10 @@ $(document).ready(function() {
         };
         $.post('../php/backend/clases/addclases.php', DataClasesadd, function(response) {
             alert(response);
+            $('#FormAddClases').trigger('reset');
+            DivFather.classList.remove('visible');
+            DivSon.classList.remove('visible');
+            Fetch_docentes_clases();
         });
         e.preventDefault();
     });

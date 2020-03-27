@@ -11,7 +11,7 @@ $first_query = "SELECT *FROM Asignaturas_colegio WHERE director_cedula='$cedula'
 $result = mysqli_query($conn,$first_query);
 
 if (mysqli_num_rows($result) == 0){
-    $query_success = "INSERT INTO Asignaturas_colegio VALUES ('$especialidad','$materia', '$cedula','$Nombres') ";
+    $query_success = "INSERT INTO Asignaturas_colegio VALUES ('$materia','$especialidad', '$cedula','$Nombres') ";
     $success = mysqli_query($conn,$query_success);
     echo "Datos guardados correctamente";
 }else{

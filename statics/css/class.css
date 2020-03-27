@@ -101,7 +101,7 @@
 }
 
 .Tables_Class {
-    width: 100%;
+    width: 90%;
     margin: auto;
     background: white;
     border: 1px solid black;
@@ -110,6 +110,7 @@
 .Tables_Class th,
 td {
     border: 1px solid black;
+    font-size: 12px;
 }
 
 .form_clases_father {
@@ -321,4 +322,8 @@ td {
 
 .FormAddDocentes {
     align-items: flex-start;
+}
+
+.container_clases_father {
+    padding-bottom: 30px;
 }
